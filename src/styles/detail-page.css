@@ -1,0 +1,53 @@
+.comment-section #comment-form button[type="submit"].btn {
+    background-color: blue; /* Warna biru untuk tombol Kirim */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* Memberikan jarak antara tombol */
+  }
+  
+  .comment-section #comment-form button[type="submit"].btn:hover {
+    background-color: darkblue;
+  }
+  
+  #save-story-btn.btn {
+    background-color: green; /* Warna default hijau untuk tombol Simpan Story */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px; /* Memberikan jarak dari tombol Kirim */
+  }
+  
+  #save-story-btn.btn:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Gaya khusus untuk tombol Hapus dari Simpanan */
+  #save-story-btn.btn[data-action="delete"] {
+    background-color: red; /* Warna merah untuk tombol Hapus dari Simpanan */
+  }
+  
+  #save-story-btn.btn[data-action="delete"]:hover {
+    background-color: darkred;
+  }
+  
+  .comment-section #comment-form {
+    display: flex; /* Mengatur agar tombol berada dalam satu baris */
+    align-items: center; /* Mengatur posisi vertikal tombol jika ada elemen lain */
+    margin-bottom: 15px; /* Memberikan jarak ke elemen berikutnya */
+  }
+  
+  .comment-section #comment-form textarea {
+    flex-grow: 1; /* Agar textarea mengisi sisa lebar */
+    padding: 10px;
+    margin-right: 10px; /* Memberikan jarak antara textarea dan tombol */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }

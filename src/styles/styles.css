@@ -1,0 +1,310 @@
+/* Reset default margin dan padding serta mengatur box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya dasar untuk body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFFFFF; /* Latar belakang utama putih */
+  color: #333; /* Warna teks utama abu-abu gelap */
+}
+
+/* Kontainer utama untuk membatasi lebar konten */
+.container {
+  padding-inline: 32px;
+  margin-inline: auto;
+  max-width: 1300px;
+}
+
+/* Gaya untuk header */
+header {
+  background-color: lightgreen; /* Latar belakang header hijau muda */
+}
+
+/* Gaya untuk elemen-elemen di dalam header */
+.main-header {
+  min-height: 90px;
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between; /* Mengatur ruang antara elemen header */
+  align-items: center; /* Mengatur posisi vertikal elemen header */
+  gap: 30px;
+}
+
+/* Gaya untuk nama merek */
+.brand-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Gaya awal untuk navigation drawer (untuk layar kecil) */
+.navigation-drawer {
+  min-height: 100vh;
+  width: 200px;
+  padding: 20px 10px;
+  background-color: #fff;
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  box-shadow: 0 0 4px 2px #00000033;
+  transform: translateX(-100%);
+  transition: transform 350ms;
+  z-index: 9999;
+}
+
+/* Menampilkan navigation drawer saat kelas 'open' ditambahkan */
+.navigation-drawer.open {
+  transform: translateX(0);
+}
+
+/* Gaya untuk tombol pembuka drawer */
+.drawer-button {
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 28px;
+  color: #141e16;
+  cursor: pointer;
+}
+
+/* Gaya untuk daftar navigasi */
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 20px;
+}
+
+/* Gaya untuk link navigasi */
+.nav-list li a {
+  padding: 6px 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Efek hover untuk link navigasi */
+.nav-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Gaya untuk konten utama */
+.main-content {
+  padding-block: 20px;
+  background-color: #FFFFFF;
+}
+
+/* Gaya awal untuk skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Gaya untuk skip link saat mendapatkan fokus */
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Gaya untuk konten utama */
+#main-content {
+  transition: transform 400ms ease-in-out; /* Transisi untuk konten utama */
+}
+
+/* View Transition (Halaman Mulai & Akhir) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(root) {
+  animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: fade-in;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Gaya untuk daftar cerita */
+#story-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.story-card {
+  background-color: lightgreen;
+  color: #333;
+  border-radius: 10px;
+  padding: 24px;
+  width: 350px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: scale(1.05);
+}
+
+/* Gaya untuk gambar di dalam kartu cerita */
+.story-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Gaya untuk judul di dalam kartu cerita */
+.story-card h3 {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 1.5rem;
+}
+
+/* Gaya untuk deskripsi atau paragraf di kartu cerita */
+.story-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Gaya untuk tombol tambah */
+.add-button {
+  background-color: #FF5C8A;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-button i {
+  font-size: 18px;
+}
+
+.add-button:hover {
+  background-color: #e24e79;
+}
+
+/* Gaya untuk tombol push-notification */
+#push-toggle {
+  background-color: #2C6B2F; /* Warna hijau tua */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Tambahkan efek transisi */
+}
+
+#push-toggle:hover {
+  background-color: #1f5b24; /* Warna hijau lebih gelap saat hover */
+}
+
+#push-toggle:active {
+  transform: scale(0.95); /* Efek klik tombol */
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 1000px) {
+  .navigation-drawer {
+    min-height: auto;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    box-shadow: none;
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-list li a {
+    display: inline-block;
+    color: #333;
+    padding: 8px 15px;
+  }
+
+  .drawer-button {
+    display: none;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #333;
+  }
+
+  .story-card {
+    background-color: lightgreen;
+    color: #333;
+  }
+
+  .about-section p,
+  .about-section li {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}

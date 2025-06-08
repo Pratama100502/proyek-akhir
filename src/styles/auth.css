@@ -1,0 +1,126 @@
+#login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Untuk memusatkan elemen secara horizontal */
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Agar form mengisi lebar container */
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#login-form button[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#login-form button[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+#register-link {
+  margin-top: 20px; /* Memberikan jarak tipis ke bawah */
+  font-size: 14px;
+  text-align: center;
+}
+
+#register-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+#register-link a:hover {
+  text-decoration: underline;
+}
+
+#login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+#register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memusatkan elemen secara horizontal */
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Agar form mengisi lebar container */
+}
+
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#register-form button[type="submit"] {
+  background-color: green; /* Warna hijau untuk tombol register */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#register-form button[type="submit"]:hover {
+  background-color: darkgreen; /* Efek hover yang lebih gelap */
+}
+
+#login-link {
+  margin-top: 20px; /* Memberikan jarak tipis ke bawah */
+  font-size: 14px;
+  text-align: center;
+}
+
+#login-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+#login-link a:hover {
+  text-decoration: underline;
+}
+
+#register-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
