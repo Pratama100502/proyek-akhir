@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="shortcut icon" href="favicon.png"><link rel="manifest" href="app.webmanifest"/><title>Story App</title><script defer="defer" src="app.bundle.js"></script><link href="app.css" rel="stylesheet"></head><body><a href="#main-content" class="skip-link">Skip to content</a><header><div class="main-header container"><a class="brand-name" href="#/">App</a><nav id="navigation-drawer" class="navigation-drawer"><ul id="nav-list" class="nav-list"><li><a href="#/">Beranda</a></li><li><a href="#/about">About</a></li><li><a href="#/add-story">Tambah Cerita</a></li><li><a href="#/saved">Laporan Tersimpan</a></li><li><a href="#/login">Login</a></li><li><a href="#/register">Register</a></li><li><a href="#/logout" id="logout">Logout</a></li><li><button id="push-toggle" class="notif-button">Subscribe</button></li></ul></nav><button id="drawer-button" class="drawer-button">☰</button></div></header><main id="main-content" class="main-content"></main><div id="map"></div><script>document.addEventListener("DOMContentLoaded", () => {
+      const drawerButton = document.getElementById("drawer-button");
+      const navList = document.getElementById("nav-list");
+
+      drawerButton.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+});</script></body></html>

@@ -1,0 +1,51 @@
+{
+  "id": "/#/login",
+  "start_url": "/#/login",
+  "scope": "/",
+  "name": "StoryApps",
+  "short_name": "StoryApps",
+  "description": "Aplikasi untuk melihat stori seseorang dengan maps.",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#d97706",
+  "icons": [
+    {
+      "src": "images/icons/icon-x144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    }
+],
+  "screenshots": [
+  {
+    "src": "images/screenshots/StoryApps_001.png",
+    "sizes": "1920x1043",
+    "type": "image/png",
+    "form_factor": "wide"
+  },
+  {
+    "src": "images/screenshots/StoryApps_002.png",
+    "sizes": "1920x1043",
+    "type": "image/png",
+    "form_factor": "wide"
+  },
+  {
+    "src": "images/screenshots/StoryApps_003.png",
+    "sizes": "1920x1043",
+    "type": "image/png",
+    "form_factor": "wide"
+  },
+  {
+    "src": "images/screenshots/StoryApps_004.png",
+    "sizes": "1080x2280",
+    "type": "image/png",
+    "form_factor": "narrow"
+  },
+  {
+    "src": "images/screenshots/StoryApps_005.png",
+    "sizes": "1080x2280",
+    "type": "image/png",
+    "form_factor": "narrow"
+  }
+]
+}
